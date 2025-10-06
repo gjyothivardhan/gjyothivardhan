@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <style>
+    :root{--accent:#2563eb;--bg:#0f172a;--card:#0b1220;color:#e6eef8}
+    *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;background:linear-gradient(180deg,var(--bg),#071024);color:var(--card);min-height:100vh}
+    .wrap{max-width:960px;margin:48px auto;padding:28px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border-radius:12px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    h1{margin:0;font-size:clamp(1.4rem,3vw,2rem)}
+    nav a{color:var(--card);text-decoration:none;margin-left:14px;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr;gap:18px;margin-top:18px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:18px}
+    .card{padding:14px;border-radius:10px;background:rgba(255,255,255,0.02);box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+    footer{margin-top:22px;font-size:.9rem;color:#9fb1d6}
+    a.button{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div>
+        <h1>Your Name</h1>
+        <div style="color:#9fb1d6">Role • Location • Short tagline</div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a><a href="#about">About</a><a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <p>Hello — I build small web and Python projects. Below are a few projects, instructions to run them, and links to demos & code.</p>
+        <p><a class="button" href="projects">View projects</a></p>
+      </div>
+
+      <div id="projects" class="grid">
+        <article class="card">
+          <h3>Project One</h3>
+          <p>Short description of project one (what it does / tech used).</p>
+          <p><a href="projects/project-1/README.md">Details</a> • <a href="https://github.com/yourusername/project-1">Code</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Project Two</h3>
+          <p>Short description of project two.</p>
+          <p><a href="projects/project-2/README.md">Details</a> • <a href="https://github.com/yourusername/project-2">Code</a></p>
+        </article>
+      </div>
+
+      <section id="about" class="card" style="margin-top:18px">
+        <h3>About me</h3>
+        <p>Two or three sentences about who you are, what you’re learning, and what roles you want.</p>
+        <p>Skills: Python • HTML/CSS • JavaScript • Git • Machine Learning (or whatever applies)</p>
+      </section>
+
+      <section id="contact" class="card" style="margin-top:18px">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+        <p><a href="resume.pdf">Download resume</a> • <a href="https://linkedin.com/in/yourprofile">LinkedIn</a></p>
+      </section>
+    </section>
+
+    <footer>
+      <div>Made with ❤️ • <small>© Your Name</small></div>
+    </footer>
+  </main>
+</body>
+</html>
